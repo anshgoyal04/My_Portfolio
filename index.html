@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Hello, I'm <span class="highlight">Ansh Goyal</span></h1>
+            <h2 class="typing-text">I'm a <span id="typing"></span></h2>
+            <p class="description">
+                As a software developer, I turn innovative ideas into efficient, seamless solutions with a blend of creativity and technical expertise.
+            </p>
+            <!-- <button class="contact-btn" id="get-in-touch">Get in Touch</button> -->
+            <a href="#contact" class="contact-btn" id="get-in-touch">Get in Touch</a>
+        </div>
+    </header>
+    
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2 class="about-heading">A Bit About Me</h2>
+            <div class="about-content">
+                <p>
+                    I’m a passionate developer focused on building seamless, engaging digital experiences. With expertise in front-end development and a solid foundation in Data Structures and Algorithms, I craft efficient solutions through code and creative problem-solving.
+                </p>
+                <p>
+                    I love working with new technologies, continually exploring innovative solutions to deliver impactful projects. When I’m not coding, you’ll find me learning new tools or collaborating with other tech enthusiasts!
+                </p>
+            </div>
+            <a href="#projects" class="view-projects-btn">See My Work</a>
+        </div>
+    </section>
+    
+
+    <section class="skills-achievements-section" id="skills">
+        <h2 class="skills-heading">My Skills & Achievements</h2>
+        
+        <!-- Skills Cards -->
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Data Analysis</h3>
+                <ul>
+                    <li>Pandas,NumPy,Scikit-learn</li>
+                    <li>Data Visualization</li>
+                    <li>Power BI</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Team Collaboration</li>
+                    <li>Time Management</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Achievements Cards -->
+        <h2 class="achievements-heading">My Achievements</h2>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <h3>Front End Development Libraries</h3>
+                <p> Demonstrated expertise in front-end web development
+                    through successful completion of a comprehensive certification program.
+                    </p>
+            </div>
+            <div class="achievement-card">
+                <h3>Python for Data Science and Machine Learning</h3>
+                <p>Gained hands-on experience in Python for data analysis
+                    and machine learning, including working with libraries such
+                    as Pandas, NumPy, and Scikit-learn.</p>
+            </div>
+            <div class="achievement-card">
+                <h3>Introduction to Cpp</h3>
+                <p>Completed an introductory course in C++ programming, focusing on key concepts such as variables, loops, functions, and object-oriented programming principles. 
+                </p>
+            </div>
+            <div class="achievement-card">
+                <h3>Basics of Project Management</h3>
+                <p>Proficient in project management methodologies, including planning, execution, and monitoring, to ensure successful project completion</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="projects-section" id="projects">
+        <h2 class="projects-heading">My Projects</h2>
+        
+        <!-- Domain Buttons -->
+        <div class="project-buttons">
+            <button class="domain-btn" onclick="showProjects('webdev')">Web Development</button>
+            <button class="domain-btn" onclick="showProjects('dataanalysis')">Data Analysis</button>
+            <button class="domain-btn" onclick="showProjects('machinelearning')">Machine Learning</button>
+        </div>
+        
+        <!-- Projects Cards -->
+        <div id="webdev" class="projects-container webdev-projects">
+            <div class="project-card">
+                <a href="https://github.com/anshgoyal04/Movie_site" target="_blank">
+                <h3>Movie Site</h3>
+                <p class="project-description" >Crafted an immersive movie website showcasing a vast collection of films, complete with interactive search and browsing features, utilizing front-end libraries like React and fetching data through APIs for real-time movie information and seamless user experience.</p>
+            </a>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/anshgoyal04/Disaster-Management-webapp" target="_blank">
+                <h3>Disaster Management webapp</h3>
+                <p class="project-description" >The Advanced Intelligence Management (A.I.M.) Disaster Management project endeavours to address
+
+                    the critical need for efficient disaster response and management through the development of a
+                    
+                    sophisticated web-based platform.</p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/anshgoyal04/Coding-raja/tree/main/Music%20Player" target="_blank">
+                <h3>Music Player</h3>
+                <p class="project-description" >A sleek and interactive music player built with modern web technologies, allowing users to play, pause, and navigate through their favorite tracks seamlessly.
+                    Features include a responsive design, intuitive controls, and smooth audio playback for an enhanced user experience.
+                </p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/anshgoyal04/Restaurant_Website" target="_blank">
+                <h3>Restaurant Landing Page</h3>
+                <p class="project-description" >A visually appealing restaurant landing page showcasing the menu, ambiance, and location, designed to engage visitors with a user-friendly interface.
+                    Features include easy navigation, online reservation options, and a responsive design for an optimal experience across devices. </p>
+                </a>
+            </div>
+        </div>
+        
+        <div id="dataanalysis" class="projects-container dataanalysis-projects">
+            <div class="project-card">
+                <a href="https://github.com/anshgoyal04/Social-Media-Sentiment-Analysis" target="_blank">
+                <h3>Social Media Sentiment Analysis </h3>
+                <p class="project-description" >In this project, we performed sentiment analysis on a large dataset of social media posts (e.g., tweets) to gauge public opinion about a specific topic/product/event. After preprocessing the data, we applied Natural Language Processing (NLP) techniques to clean the text, removing noise such as URLs, mentions, and stopwords.</p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/anshgoyal04/Fraud-Detection-in-Financial-Transaction" target="_blank">
+                <h3>Fraud Detection in Financial Transaction</h3>
+                <p class="project-description" >This project aims to build an efficient fraud detection system for financial transactions. Fraud detection is critical for preventing financial losses, especially in the banking and e-commerce sectors.The dataset used for this analysis consists of anonymized financial transactions.</p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/anshgoyal04/" target="_blank">
+                <h3>Stock Market Analysis and Predictions</h3>
+                <p class="project-description" > Analyze historical stock market data of AAPL to identify
+                    trends, patterns, and correlations between stock prices. Apply time series analysis techniques to predict future stock
+                    prices using model ARIMA. Making a report of trends and
+                    financial analysis of stock my using the Power BI tool for
+                    visualization.
+                    </p>
+                </a>
+            </div>
+        </div>
+        
+        <div id="machinelearning" class="projects-container machinelearning-projects">
+            <div class="project-card">
+                <a href="https://github.com/anshgoyal04/Federated_Matrix_Completion_Technique" target="_blank">
+                <h3>Federated Matrix Completion Technique
+                </h3>
+                <p class="project-description" >
+                    This project aims to combine federated learning and matrix completion, allowing decentralized devices to collaboratively complete matrices without sharing sensitive data. The approach enhances data imputation, ideal for recommendation systems, by ensuring privacy and improving efficiency in distributed settings.</p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/anshgoyal04/" target="_blank">
+                <h3> Handwritten Character Recognition</h3>
+                <p class="project-description" >Developed a handwritten character recognition system using machine learning techniques, capable of accurately identifying and classifying characters from scanned or captured handwritten text. The system leverages neural networks and image processing algorithms to ensure high accuracy and efficiency in recognizing diverse handwriting styles.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+<section id="contact" class="section">
+    <div class="contact-container">
+        <!-- Centered Heading -->
+        <h2 class="contact-heading">Connect with Me</h2>
+
+        <div class="contact-content">
+            <!-- Social Links Section -->
+            <div class="contact-info">
+                <div class="social-icons">
+                    <a href="https://github.com/anshgoyal04" target="_blank"><img src="github2.jpg" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/ansh-goyal-5a9bb4255/" target="_blank"><img src="linkedin2.jpg" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/_.anshgoyal._/" target="_blank"><img src="instagram2.jpg" alt="Instagram"></a>
+                    <a href="mailto:anshgoyal18111354@gmail.com"><img src="gmail2.jpg" alt="Gmail"></a>
+                </div>
+            </div>
+
+            <!-- Form Section -->
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xwpkbwbz" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <p class="thankyou-message">Thank you for visiting! Have a great day ahead!</p>
+    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
